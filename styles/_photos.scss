@@ -1,5 +1,5 @@
 .photos {
-
+    width: 100vw;
     @include vertical-align(center, center);
 
     @media screen and (min-width: $tablet-size) {
