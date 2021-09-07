@@ -1,0 +1,32 @@
+.footer {
+    background-color: #9edbcc;
+    @include vertical-align(space-around, center); 
+
+    svg {
+        margin-top: 4rem;
+        fill: $dark-moderate-cyan;
+        scale: 1.3;
+    }
+
+    &__links {
+        @include horizontal-align(space-between, center);
+        margin: 2em 0;
+        width: 35%;
+        min-width: 17rem;
+        max-width: 25rem;
+    }
+
+    &__link {
+        color: $dark-moderate-cyan;
+    }
+
+    &__social-media {
+        @include horizontal-align(space-evenly, center);
+        width: 10rem;
+        margin: 3rem 0;
+    }
+}
+
+.attribution {
+    font-size: 0.8rem;
+}

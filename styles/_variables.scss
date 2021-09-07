@@ -1,0 +1,76 @@
+//***Variables***
+    $desktop-size: 1200px;
+    $tablet-size: 768px;
+
+    //Colors
+    //Primary
+    $soft-red: hsl(7, 99%, 70%);
+    $yellow: hsl(51, 100%, 49%);
+    $dark-desaturated-cyan: hsl(167, 40%, 24%); //graphic design text
+    $dark-blue: hsl(194, 6%, 41%); //photography text
+    $dark-moderate-cyan: hsl(168, 34%, 41%);  //footer
+
+    //Neutral
+    $very-dark-desaturated-blue: hsl(212, 27%, 19%);
+    $very-dark-grayish-blue: hsl(213, 9%, 39%);
+    $dark-grayish-blue: hsl(232, 10%, 55%);
+    $grayish-blue: hsl(210, 4%, 67%);
+    $white: hsl(0, 0%, 100%);
+
+//***Mixins***
+@mixin vertical-align($justify-content, $align-items) {
+    display: flex;
+    flex-direction: column;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+@mixin horizontal-align($justify-content, $align-items) {
+    display: flex;
+    flex-direction: row;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+//Placeholders
+%img-sections {
+    width: 100%;
+    min-height: 24rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include vertical-align(flex-end, center);
+
+    .section__title {
+        color: $dark-desaturated-cyan;
+        text-align: center;
+
+        @media screen and (min-width: $desktop-size) {
+            align-self: center;
+        }
+    }
+
+    .section__paragraph {
+        color: $dark-desaturated-cyan;
+        margin-top: 0;
+        text-align: center;
+        align-self: center;
+    }
+}
+
+%last-sections {
+    min-height: 44rem;
+    padding: 1rem;
+    background-position: top;
+    
+    .section__container {
+        margin: 0 auto;
+    }
+
+    .section__title {
+        margin: 0.5rem;
+    }
+
+    .section__paragraph {
+        width: 100%;
+    }
+}
