@@ -13,9 +13,10 @@
     &__container {
         @include vertical-align(space-around, center);
         margin: 1rem;
+        width: 100%;
 
         @media screen and (min-width: $desktop-size) {
-            @include horizontal-align(space-evenly, center)
+            @include horizontal-align(space-evenly, stretch);
         }
     }
 }
@@ -24,7 +25,8 @@
     @include vertical-align(space-around, center);
     margin: 3em 1em;
     width: 50%;
-    min-width: 20rem;
+    min-width: 16rem;
+    max-width: 24rem;
 
     &__img {
         border-radius: 50%;

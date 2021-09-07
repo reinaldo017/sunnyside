@@ -23,6 +23,11 @@
         font-size: 0.8rem;
         font-family: 'Barlow', sans-serif;
         color: $grayish-blue;
+        transition: color 300ms ease-out;
+
+        &:hover {
+            color: $very-dark-grayish-blue;
+        }
     }
 }
 

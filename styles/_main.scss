@@ -54,7 +54,7 @@
 
     &__title {
         font-family: 'Fraunces', sans-serif;
-        font-weight: 600;
+        font-weight: 900;
         color: $very-dark-desaturated-blue;
         min-width: 10em;
         margin: 1em 0;
@@ -70,8 +70,39 @@
     &__call-to-action {
         font-family: 'Fraunces', sans-serif;
         font-weight: 700;
+        font-size: 0.8rem;
         margin: 1.5em 0;
+        letter-spacing: 1.5px;
+
         color: $very-dark-desaturated-blue;
+        position: relative; //Needed for positioning the div below
+        z-index: 4;
+
+        &:hover {
+            div {
+                opacity: 0.7;
+            }
+        }
+
+        div {
+            width: 7rem;
+            height: 0.5rem;
+            opacity: 0.4;
+            border-radius: 2px;
+            position: absolute;
+            z-index: -4;
+            top: 11px;
+            left: -5px;
+            transition: opacity 300ms ease-out;          
+        }
+
+        #transform {
+            background-color: $yellow;
+        }
+
+        #stand {
+            background-color: $soft-red;
+        }
 
         @media screen and (min-width: $desktop-size) {
             align-self: flex-start;

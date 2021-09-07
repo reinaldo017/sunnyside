@@ -63,7 +63,11 @@
     background-position: top;
     
     .section__container {
-        margin: 0 auto;
+        margin: 0 auto 2.5rem;
+
+        @media screen and (min-width: $tablet-size) {
+            margin: 0 auto;
+        }
     }
 
     .section__title {

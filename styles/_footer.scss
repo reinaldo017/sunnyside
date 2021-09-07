@@ -19,15 +19,59 @@
 
     &__link {
         color: $dark-moderate-cyan;
+        transition: color 300ms ease-out;
+
+        &:hover {
+            color: $white;
+        }
     }
 
     &__social-media {
         @include horizontal-align(space-evenly, center);
-        width: 10rem;
+        width: 12rem;
         margin: 3rem 0;
+        cursor: pointer;
     }
+
+    &__facebook {
+        transition: fill 300ms ease-out;
+        
+        &:hover {
+            fill:#0b86ee;
+        }
+    }
+
+    &__instagram {
+        transition: fill 300ms ease-out;
+        
+        &:hover {
+            fill:#f99444;
+        }        
+    }
+
+    &__twitter {
+        transition: fill 300ms ease-out;
+        
+        &:hover {
+            fill:#1d9bf0;
+        }        
+    }
+    
+    &__pinterest {
+        transition: fill 300ms ease-out;
+        
+        &:hover {
+            fill:#df0022;
+        }        
+    }    
+
 }
 
 .attribution {
     font-size: 0.8rem;
+    color: $dark-moderate-cyan;
+
+    a {
+        color: $very-dark-desaturated-blue;
+    }
 }

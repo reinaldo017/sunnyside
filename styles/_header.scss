@@ -54,6 +54,11 @@
 
     &__link {
         color: $white;
+        transition: color 300ms ease-out;
+
+        &:hover {
+            color: $dark-moderate-cyan;
+        }
     }
 
     &__hamburger {
