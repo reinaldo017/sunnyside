@@ -1,0 +1,12 @@
+// Families
+$Barlow: 'Barlow', sans-serif;
+$Fraunces: 'Fraunces', serif;
+
+// Sizes
+$size-sm: clamp(0.8rem, 0.13vw + 0.77rem, 0.89rem);
+$size-base: clamp(1.00rem, calc(0.96rem + 0.19vw), 1.13rem);;
+$size-md: clamp(1.25rem, 0.48vw + 1.15rem, 1.58rem);
+$size-lg: clamp(1.56rem, 0.78vw + 1.41rem, 2.11rem);
+$size-xl: clamp(2.25rem, calc(2.12rem + 0.56vw), 2.63rem);
+$size-xxl: clamp(2.50rem, calc(2.17rem + 1.41vw), 3.44rem);
+$size-xxxl: clamp(3.05rem, 2.78vw + 2.5rem, 5rem);

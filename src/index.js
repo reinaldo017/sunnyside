@@ -1,10 +1,21 @@
-const menu = document.querySelector('.menu');
-const hamburger = document.querySelector('.nav__hamburger');
-let menuClasses = menu.classList;
+// Toggle the menu__item--hide in every li
+const menuItems = document.querySelectorAll('.menu__item')
 
-//Event handler
-const handleClick = (e) => { 
-    menuClasses.toggle('hide');
+const toggleClassOfMenuItems = () => {
+    menuItems.forEach(item => {
+        item.classList.toggle('menu__item--hide')
+    })
 }
 
-hamburger.addEventListener('click', handleClick);
+// Toggle the mobile menu
+const menu = document.querySelector('.menu')
+
+const toggleMenu = () => { 
+    menu.classList.toggle('menu--hide')
+}
+
+// Add event listeners to hamburger icon
+const hamburger = document.querySelector('.nav__hamburger')
+
+hamburger.addEventListener('click', toggleMenu)
+hamburger.addEventListener('click', toggleClassOfMenuItems)

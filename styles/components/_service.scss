@@ -1,0 +1,48 @@
+@use '../abstracts/mixins';
+@use '../abstracts/breakpoints';
+@use '../base/colors';
+@use '../base/fonts';
+
+.service {
+    flex-grow: 1;
+    @include mixins.vertical-align(flex-end);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+
+    &--graphic {
+        background-image: url('../../images/mobile/image-graphic-design.jpg');
+        color: colors.$dark-desaturated-cyan;
+
+        @media screen and (min-width: breakpoints.$size-sm) {
+            background-image: url('../../images/desktop/image-graphic-design.jpg');
+        }
+    }
+
+    &--photography {
+        background-image: url('../../images/mobile/image-photography.jpg');
+        color: colors.$very-dark-desaturated-blue;
+
+        @media screen and (min-width: breakpoints.$size-sm) {
+            background-image: url('../../images/desktop/image-photography.jpg');
+        }
+    }
+
+    &__text {
+        max-width: 26rem;
+    }
+
+    &__title {
+        font-family: fonts.$Fraunces;
+        font-size: fonts.$size-xl;
+        font-weight: 900;
+    }
+
+    &__paragraph {
+        margin: 1.5rem 1rem 4rem;
+        font-family: fonts.$Barlow;
+        font-size: fonts.$size-base;
+        line-height: 1.8;
+    }
+}

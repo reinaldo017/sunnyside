@@ -1,0 +1,54 @@
+@use '../base/colors';
+@use '../abstracts/breakpoints';
+@use '../abstracts/mixins';
+@use '../base/fonts';
+
+.menu {
+    @include mixins.vertical-align(space-evenly);
+    position: absolute;
+    top: calc(100% + 3rem);
+    width: calc(100% - 2rem);
+    height: 19.25rem;
+    background-color: colors.$white;
+    transition: all 250ms ease-out;
+
+    @media screen and (min-width: breakpoints.$size-md) {
+        width: calc(100% - 5rem);
+    }
+
+    @media screen and (min-width: breakpoints.$size-lg) {
+        display: none;
+    }
+
+    &__item {
+        opacity: 1;
+        transition: opacity 350ms ease-out 300ms;
+
+        &--hide {
+            opacity: 0;
+        }
+    }
+
+    &__link {
+        font-size: fonts.$size-base;
+        font-family: fonts.$Barlow;
+        color: colors.$grayish-blue;
+        transition: color 250ms ease-out;
+
+        &:hover {
+            color: colors.$very-dark-grayish-blue;
+        }
+
+        &--contact {
+            padding: 1em 2em;
+            border-radius: 1.5em;
+            background-color: colors.$yellow;
+            color: colors.$very-dark-grayish-blue;
+        }
+    }
+
+    &--hide {
+        height: 0;
+        overflow: hidden;
+    }
+}

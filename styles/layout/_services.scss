@@ -1,0 +1,13 @@
+@use '../abstracts/mixins';
+@use '../abstracts/breakpoints';
+
+.services {
+    @include mixins.vertical-align();
+    width: 100%;
+    min-height: 79rem;
+
+    @media screen and (min-width: breakpoints.$size-lg) {
+        @include mixins.horizontal-align(center, stretch);
+        min-height: 37.5rem;
+    }
+}

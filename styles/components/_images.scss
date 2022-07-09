@@ -1,0 +1,30 @@
+@use '../abstracts/breakpoints';
+
+.img {
+    min-height: 20.75rem;
+    object-fit: cover;
+
+
+    @media screen and (min-width: breakpoints.$size-md) {
+        display: none;
+    }
+}
+
+.desktop-img {
+    display: none;
+
+    @media screen and (min-width: breakpoints.$size-md) {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &--egg {
+        grid-area: egg;
+    }
+
+    &--cup {
+        grid-area: cup;
+    }
+}

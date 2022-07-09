@@ -1,0 +1,17 @@
+@use '../abstracts/mixins';
+@use '../abstracts/breakpoints';
+
+.main {
+    @include mixins.vertical-align();
+
+    @media screen and (min-width: breakpoints.$size-lg) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: minmax(20rem, 37.5rem) minmax(20rem, 37.5rem);
+        grid-template-areas:
+        "transform egg"
+        "cup stand";
+        align-items: center;
+        justify-items: center;
+    }
+}

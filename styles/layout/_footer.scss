@@ -1,0 +1,57 @@
+@use '../abstracts/mixins';
+@use '../base/colors';
+@use '../base/fonts';
+@use '../abstracts/breakpoints';
+
+.footer {
+    @include mixins.vertical-align();
+    min-height: 23.25rem;
+    background-color: colors.$cyan;
+
+    &__logo {
+        margin-top: 4.5rem;
+        filter: brightness(0) saturate(100%) invert(16%) sepia(5%) saturate(5663%) hue-rotate(118deg) brightness(95%) contrast(76%);
+
+        @media screen and (min-width: breakpoints.$size-md) {
+            min-width: 10.5rem;
+        }
+    }
+
+    &__links {
+        @include mixins.horizontal-align(space-evenly, center);
+        gap: 4rem;
+        margin: 3rem auto 5.75rem;
+        font-family: fonts.$Barlow;
+        font-size: fonts.$size-base;
+    }
+
+    &__link {
+        color: colors.$dark-moderate-cyan;
+
+        &:hover {
+            color: colors.$dark-desaturated-cyan;
+        }
+
+        &:active {
+            color: colors.$white;
+        }
+    }
+
+    &__social-media {
+        @include mixins.horizontal-align(space-evenly, center);
+        gap: 2rem;
+        margin-bottom: 5rem;
+    }
+
+    &__icon {
+        cursor: pointer;
+
+        &:hover {
+            filter: brightness(0) saturate(100%) invert(25%) sepia(66%) saturate(344%) hue-rotate(116deg) brightness(93%) contrast(90%);
+        }
+
+        &:active {
+            filter: brightness(0) saturate(100%) invert(98%) sepia(100%) saturate(2%) hue-rotate(211deg) brightness(105%) contrast(101%);
+        }
+    }
+}

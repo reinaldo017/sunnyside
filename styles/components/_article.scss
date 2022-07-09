@@ -1,0 +1,66 @@
+@use '../base/fonts';
+@use '../base/colors';
+@use '../abstracts/mixins';
+@use '../abstracts/breakpoints';
+
+.article {
+    @include mixins.vertical-align();
+    max-width: 28.5rem;
+    min-height: 29rem;
+    padding: 0 2.5rem;
+    text-align: center;
+
+    @media screen and (min-width: breakpoints.$size-xl) {
+        align-items: flex-start;
+        min-height: 100%;
+        text-align: left;
+        padding: 0;
+    }
+
+    &__title {
+        font-family: fonts.$Fraunces;
+        font-size: fonts.$size-xl;
+        font-weight: 900;
+    }
+
+    &__paragraph {
+        margin-top: 1.5rem;
+        font-family: fonts.$Barlow;
+        font-size: fonts.$size-base;
+        line-height: 1.8;
+        color: colors.$dark-grayish-blue;
+    }
+
+    &__call-to-action {
+        display: inline-block;
+        margin-top: 1.5rem;
+        font-family: fonts.$Fraunces;
+        font-size: fonts.$size-base;
+        color: #000;
+
+        &--yellow {
+            &::after {
+                content: "";
+                display: block;
+                position: relative;
+                top: -9px;
+                margin: 0 auto;
+                border-top: 5px solid colors.$yellow;
+                opacity: 0.4;
+            }
+        }
+
+        &--red {
+            &::after {
+                content: "";
+                display: block;
+                position: relative;
+                top: -9px;
+                width: 6.66rem;
+                margin: 0 auto;
+                border-top: 5px solid colors.$soft-red;
+                opacity: 0.4;
+            }
+        }
+    }
+}

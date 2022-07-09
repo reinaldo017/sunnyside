@@ -1,0 +1,13 @@
+@mixin vertical-align($justify-content: center, $align-items: center) {
+    display: flex;
+    flex-direction: column;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+@mixin horizontal-align($justify-content: center, $align-items: center) {
+    display: flex;
+    flex-direction: row;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}

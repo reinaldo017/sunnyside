@@ -4,11 +4,18 @@
   "description": "FrontEndMentor Challenge",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass ./styles/main.scss ./styles.css --watch"
   },
   "keywords": [
     "landingpage"
   ],
   "author": "Reinaldo Jacome",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "cssnano": "^5.1.12",
+    "postcss": "^8.4.14",
+    "postcss-cli": "^10.0.0",
+    "sass": "^1.52.3"
+  }
 }

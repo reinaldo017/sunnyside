@@ -1,0 +1,29 @@
+@use '../base/colors';
+@use '../base/fonts';
+@use '../abstracts/breakpoints';
+@use '../abstracts/mixins';
+
+.testimonials {
+    
+    &__title {
+        margin-top: 4.5rem;
+        font-family: fonts.$Fraunces;
+        font-size: fonts.$size-base;
+        text-align: center;
+        letter-spacing: 4px;
+        color: colors.$grayish-blue;
+    }
+
+    &__container {
+        @include mixins.vertical-align(space-evenly, center);
+        
+        @media screen and (min-width: breakpoints.$size-md) {
+            @include mixins.horizontal-align(space-evenly, stretch);
+            flex-wrap: wrap;
+        }
+
+        @media screen and (min-width: breakpoints.$size-lg) {
+            min-height: 37.25rem;
+        }
+    }
+}

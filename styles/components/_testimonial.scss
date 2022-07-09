@@ -1,0 +1,39 @@
+@use '../abstracts/mixins';
+@use '../base/colors';
+@use '../base/fonts';
+
+.testimonial {
+    @include mixins.vertical-align(space-evenly, center);
+    max-width: 27rem;
+    padding: 4.5rem 2.5rem;
+
+    &__img {
+        border-radius: 50%;
+        width: 4.5rem;
+    }
+
+    &__paragraph {
+        margin: 2.5rem auto;
+        font-family: fonts.$Barlow;
+        font-size: fonts.$size-base;
+        text-align: center;
+        line-height: 1.8;
+        color: colors.$very-dark-grayish-blue;
+    }
+
+    &__footer {
+        @include mixins.vertical-align(space-between);
+    }
+
+    &__name {
+        margin-bottom: 1rem;
+        font-family: fonts.$Fraunces;
+        font-size: fonts.$size-base;
+    }
+
+    &__role {
+        font-family: fonts.$Barlow;
+        font-size: fonts.$size-sm;
+        color: colors.$grayish-blue;
+    }
+}

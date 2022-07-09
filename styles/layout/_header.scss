@@ -1,0 +1,94 @@
+@use '../base/colors';
+@use '../base/fonts';
+@use '../abstracts/mixins';
+@use '../abstracts/breakpoints';
+
+.header {
+    min-height: 35.63rem;
+    background-image: url('../images/mobile/image-header.jpg');
+    background-size: cover;
+    background-position: center;
+
+    @media screen and (min-width: breakpoints.$size-sm) {
+        background-image: url('../images/desktop/image-header.jpg');
+    }
+
+    @media screen and (min-width: breakpoints.$size-lg) {
+        min-height: 50rem;
+    }
+
+    &__title {
+        max-width: 34rem;
+        margin: 2.4em auto 1.4em;
+        font-size: fonts.$size-xxl;
+        font-family: fonts.$Fraunces;
+        font-weight: 900;
+        text-align: center;
+        letter-spacing: 7px;
+        line-height: 1.2;
+        color: colors.$white;
+
+        @media screen and (min-width: breakpoints.$size-md) {
+            max-width: initial;
+            margin: 2em auto 1.74em;
+        }
+    }
+
+    &__arrow {
+        display: block;
+        height: 7.75rem;
+        margin: 0 auto;
+    }
+}
+
+.nav {
+    @include mixins.horizontal-align(space-between, center);
+    position: relative; //Needed for positioning the mobile menu
+    padding: 2rem 1rem 0;
+
+    @media screen and (min-width: breakpoints.$size-md) {
+        padding: 2.5rem 2.5rem 0;
+    }
+
+    &__logo {
+        min-width: 7.75rem;
+
+        @media screen and (min-width: breakpoints.$size-md) {
+            min-width: 10.5rem;
+        }
+    }
+
+    &__links-container {
+        display: none;
+
+        .contact-button {
+            padding: 1em 2rem;
+            border-radius: 1.5em;            
+            background-color: colors.$white;
+            color: #000;
+        }
+
+        @media screen and (min-width: breakpoints.$size-lg) {
+            @include mixins.horizontal-align(space-evenly, center);
+            gap: 3rem;
+            font-family: fonts.$Barlow;
+            font-size: fonts.$size-base
+        }
+    }
+
+    &__link {
+        color: colors.$white;
+        transition: color 300ms ease-out;
+
+        &:hover {
+            color: colors.$dark-moderate-cyan;
+        }
+    }
+
+    &__hamburger {
+        cursor: pointer;
+        @media screen and (min-width: breakpoints.$size-lg) {
+            display: none;
+        }
+    }
+}
