@@ -2,7 +2,7 @@
 
 ![See the live version here](https://reinaldo017.github.io/sunnyside)
 
-![Design preview for the Sunnyside agency landing page](./images/desktop-preview.jpg)
+![Design preview for the Sunnyside agency landing page](./images/desktop-design.jpg)
 
 ### Screenshot
 
@@ -19,8 +19,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [](https://github.com/reinaldo017/sunnyside)
-- Live Site URL: [](https://reinaldo017.github.io/sunnyside)
+- Solution URL: ![](https://github.com/reinaldo017/sunnyside)
+- Live Site URL: ![](https://reinaldo017.github.io/sunnyside)
 
 ## Built with
 
@@ -33,4 +33,4 @@ Users should be able to:
 
 ## Author
 
-- LinkedIn - [](https://www.linkedin.com/in/reinaldojacome/)
+- LinkedIn - ![](https://www.linkedin.com/in/reinaldojacome/)
