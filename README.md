@@ -19,8 +19,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: ![](https://github.com/reinaldo017/sunnyside)
-- Live Site URL: ![](https://reinaldo017.github.io/sunnyside)
+- Solution URL: ![Here](https://github.com/reinaldo017/sunnyside)
+- Live Site URL: ![Here](https://reinaldo017.github.io/sunnyside)
 
 ## Built with
 
@@ -33,4 +33,4 @@ Users should be able to:
 
 ## Author
 
-- LinkedIn - ![](https://www.linkedin.com/in/reinaldojacome/)
+- LinkedIn - ![Reinaldo Jácome](https://www.linkedin.com/in/reinaldojacome/)
