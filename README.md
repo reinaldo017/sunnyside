@@ -4,14 +4,9 @@
 
 ![Design preview for the Sunnyside agency landing page](./images/desktop-preview.jpg)
 
-## Table of contents
+### Screenshot
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-  - [Built with](#built-with)
-- [Author](#author)
+![](./images/screenshot.png)
 
 ## Overview
 
@@ -21,10 +16,6 @@ Users should be able to:
 
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
-
-### Screenshot
-
-![](./images/screenshot.png)
 
 ### Links
 
