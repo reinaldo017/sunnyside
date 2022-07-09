@@ -127,13 +127,13 @@ html {
 
 .header {
   min-height: 35.63rem;
-  background-image: url("../images/mobile/image-header.jpg");
+  background-image: url("./images/mobile/image-header.jpg");
   background-size: cover;
   background-position: center;
 }
 @media screen and (min-width: 500px) {
   .header {
-    background-image: url("../images/desktop/image-header.jpg");
+    background-image: url("./images/desktop/image-header.jpg");
   }
 }
 @media screen and (min-width: 850px) {
@@ -491,21 +491,21 @@ html {
   text-align: center;
 }
 .service--graphic {
-  background-image: url("../../images/mobile/image-graphic-design.jpg");
+  background-image: url("./images/mobile/image-graphic-design.jpg");
   color: hsl(167deg, 40%, 24%);
 }
 @media screen and (min-width: 500px) {
   .service--graphic {
-    background-image: url("../../images/desktop/image-graphic-design.jpg");
+    background-image: url("./images/desktop/image-graphic-design.jpg");
   }
 }
 .service--photography {
-  background-image: url("../../images/mobile/image-photography.jpg");
+  background-image: url("./images/mobile/image-photography.jpg");
   color: hsl(212deg, 27%, 19%);
 }
 @media screen and (min-width: 500px) {
   .service--photography {
-    background-image: url("../../images/desktop/image-photography.jpg");
+    background-image: url("./images/desktop/image-photography.jpg");
   }
 }
 .service__text {
